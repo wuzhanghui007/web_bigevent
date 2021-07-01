@@ -76,7 +76,9 @@ $(function() {
                 }
                 layered.msg(res.message);
                 console.log(res.token);
-                //跳转到后台主页
+                //将token值存在本地
+                localStorage.setItem('token', res.token)
+                    //跳转到后台主页
                 location.href = "/index.html"
 
             }
