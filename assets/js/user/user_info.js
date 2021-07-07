@@ -19,7 +19,6 @@ $(function() {
                 if (res.status !== 0) {
                     return layer.msg('获取用户失败')
                 }
-                console.log(res);
                 //调用form.val()快速为表单赋值
                 form.val("initUserInfo", res.data)
             }

@@ -13,6 +13,8 @@ $(function() {
             layer.close(index)
         });
     })
+
+
 })
 
 
@@ -59,5 +61,12 @@ function renderAvatar(user) {
         $('.text-avatar').hide()
     }
 
+
+}
+
+function eadits() {
+    //调用a标签点击事件
+    $('#art_eadit')[0].click()
+    $('#artList').addClass('layui-this').siblings().removeClass("layui-this");
 
 }
