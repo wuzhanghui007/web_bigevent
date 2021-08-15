@@ -12,8 +12,9 @@ $(function() {
                 if (res.status !== 0) {
                     return layer.msg('获取失败')
                 }
-                // console.log(res);
+                console.log(res);
                 var htmlStr = template('tpl-table', res)
+                console.log(htmlStr);
                 $('tbody').html(htmlStr)
             }
         });
